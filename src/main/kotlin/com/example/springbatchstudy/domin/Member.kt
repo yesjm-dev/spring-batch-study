@@ -8,7 +8,7 @@ class Member(
     @Id
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    val id: Int,
+    val id: Int? = null,
     @Column(name = "name")
     var name: String,
     @Column(name = "age")
