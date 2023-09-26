@@ -2,7 +2,8 @@ package com.example.springbatchstudy.domin
 
 import jakarta.persistence.*
 
-@Entity
+@Table
+@Entity(name = "member")
 class Member(
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
